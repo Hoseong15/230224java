@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8" />
+  <!-- <link href="main.css" rel="stylesheet" /> -->
+  <title>Sample</title>
+</head>
+<html>
+
+<body>
+
+  <script>
+    const numbers = [1, 2, 3, 4, 5];
+    print(numbers);
+    // push
+    numbers.push(6);
+    print(numbers);
+    numbers.push(7, 8, 9);
+    print(numbers);
+
+    // pop
+    numbers.pop();
+    print(numbers);
+
+    // concat
+    const numbersNew = [10, 11, 12];
+
+
+
+
+    function print(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+  </script>
+
+</body>
+
+</html>
