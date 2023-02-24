@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // filter, map, reduce  ****** 제일 중요 ******
+    // const numbers = [11,22,33,44,55];
+    // const result = numbers.reduce((n1,n2) => n1+n2);
+    // print(result);
+
+    // const arr = [
+    //   [0,1],
+    //   [2,3],
+    //   [4,5]
+    // ]
+    // const result2 = arr.reduce((a,b)=>{
+    //   console.log(a,b);
+    //   return a.concat(b);
+    // })
+    // print(result2);
+
+    const nnn = [1,2,3,4,5,6];
+    const result3 = nnn.reduce((n1,n2)=> {
+      console.log(n1, n2)
+      return n1 +n2
+    });
+    
+    print(result3)
+    const nnnn = [1,2,3,4,5,6];
+    const result4 = nnnn.reduce((n1,n2,n3)=> {
+      console.log(n1, n2 ,n3)
+      return n1 +n2 +n3
+    });
+    print(result4)
+
+    const bbb = [
+      [100,200,300],
+      [400,500,600],
+      [700,800,900],
+      [1000,2000,3000],
+    ]
+    const result5 = bbb.reduce((a,b)=> {
+      console.log(a,b);
+      return a.concat(b);
+    })
+    print(result5)
+
+
+    function print(arr) {
+      const p = document.createElement('p');
+      p.innerHTML = arr;
+      document.body.appendChild(p);
+    }
+  </script>
+</body>
+</html>

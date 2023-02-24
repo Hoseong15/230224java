@@ -24,15 +24,65 @@
 
     // concat
     const numbersNew = [10, 11, 12];
+    const merged = numbers.concat(numbersNew);
+    print(merged);
+
+    // reverse
+    const rev = numbers.reverse();
+    print(rev);
+
+    // join
+    const arr = ['hello', 'my', 'name'];
+    // print(arr)
+    print(arr.join(':'));
 
 
+    // 아주 중요한 요소 !!! ///// split , splice , slice
+    
+    // split ///
+    const strex = '032-0000-1111';
+    const strexmod = strex.split('-');
+    print(strexmod);
+    print(strexmod[0]);
 
+    //// splice ////
+    const animalarray = ['rabbit', 'cow', 'pig', 'cat', 'dog'];
+    // const result1 = animalarray.splice(2);
+    // print(result1);
+    // const result2 = animalarray.splice(2,2);
+    // print(result2)
+    const result3 = animalarray.splice(2, 0, 'frog');
+    print(animalarray)     // 이 경우 result3는 빈 배열임
+
+    //// slice  원본유지  조건을 만족시키고 배열에 담아서 준다.  ////
+    const result4 = animalarray.slice(3);
+    print(result4)
+
+    // const aa = '010-2876-3982'
+    // const aaa = aa.split('2876')
+    // print(aaa)
+
+    // const bb = ['coffee', 'julice', 'max', 'min', 'dollor', 'won']
+    //   // const result = bb.splice(1)
+    //   // print(result)
+
+    //   // const result1 = bb.splice(3,2)
+    //   // print(result1)
+
+    //   const result2 = bb.splice(2,0, 'tea')
+    //   print(bb)
+
+    //   // const result3 = bb.slice(2);
+    //   // print(result4)
+
+  
 
     function print(arr) {
       const p = document.createElement('p');
       p.innerHTML = arr;
       document.body.appendChild(p);
     }
+    
   </script>
 
 </body>
